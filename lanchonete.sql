@@ -8,3 +8,9 @@ create table usuarios
         ususenha varchar(100),
         usulogado boolean default 0
     );
+
+    insert into usuarios
+    (usunome,usuarios,usulogin)
+    VALUES
+    ('Yasmim', 'yas2008', '1234'),
+    ('Debora', 'dede', '4321');
