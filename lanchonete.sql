@@ -9,8 +9,8 @@ create table usuarios
         usulogado boolean default 0
     );
 
-    insert into usuarios
-    (usunome,usuarios,usulogin)
-    VALUES
-    ('Yasmim', 'yas2008', '1234'),
-    ('Debora', 'dede', '4321');
+   insert into usuarios
+    (usunome,usulogin,ususenha)
+    VALUE
+    ('Yasmim', 'yas2008', MD5('1234')),
+    ('Debora', 'dede', MD5('4321'));
